@@ -1,0 +1,4 @@
+idlj -fall Counter.idl
+orbd -ORBInitialPort 1050 -ORBInitialHost localhost
+java Server -ORBInitRef NameService=corbaloc::localhost:1050/NameService
+java GUIClient -ORBInitRef NameService=corbaloc::localhost:1050/NameService
