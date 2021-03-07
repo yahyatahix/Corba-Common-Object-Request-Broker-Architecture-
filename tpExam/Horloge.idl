@@ -1,0 +1,7 @@
+
+
+interface Horloge {
+	
+	 string  afficher();
+	 string  alarme(in string wakeup);
+};
